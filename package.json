@@ -1,0 +1,15 @@
+{
+  "name": "nav-scroll",
+  "version": "1.0.0",
+  "description": "基于vue的锚点级联导航",
+  "main": "nav-scroll.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "pagescroll"
+  ],
+  "author": "shoujibang",
+  "license": "ISC"
+}
