@@ -1,7 +1,14 @@
 body,html{
   scroll-behavior: smooth;
-  font-size: 62.5%; 
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0; 
+  overflow: hidden;
 }
+ul,dl{
+  list-style-type: none;
+}
+/* vuenavSCroll-----css */
 .ccy-neuhive{
   width:100%;
   height:100%;
@@ -76,3 +83,158 @@ body,html{
   background: rebeccapurple;
   border: 1px solid #ddd;
 }
+
+
+/* vuetooltip-----css */
+
+.vue-tooltip h1{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background:darkgreen;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 90px;
+}
+/* 图片抖动 */
+.vue-tooltip .img-tooltip{
+  width: 88px;
+  height: 88px;
+  margin: 0 auto;
+}
+.vue-tooltip .img-tooltip:hover img{
+    animation: paymentShake 0.3s;   
+}
+@keyframes paymentShake {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    25% {
+      -webkit-transform: rotate(8deg);
+    }
+    50% {
+      -webkit-transform: rotate(-8deg);
+    }
+    75% {
+      -webkit-transform: rotate(8deg);
+    }
+    100% {
+      -webkit-transform: rotate(-8deg);
+    }
+  }
+
+
+/* 图片重底部跑倒上面 */
+.vue-tooltip img{
+  width: 100%;
+  height: 100%;
+}
+.vue-tooltip   .bootom-enter-active {
+	transition: all  0.5s 0.5s ease;
+}
+.vue-tooltip   .bootom-leave-active {
+	transition: all  0.5s cubic-bezier(0.25, 0.1, 0.25, 1);;
+}
+.vue-tooltip   .bootom-enter, .bootom-leave-to {
+	opacity: 0;
+	transform: translateY(100px);
+}
+
+.vue-tooltip .bannerRight{
+  width: 200px;
+  height: 200px;
+  margin:0 auto;
+}
+
+/* tab导航切换组件 */
+.vue-tooltip .tabbox ul{
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  height: 50px;
+  overflow: hidden;
+  justify-content:center;
+}
+.vue-tooltip .tabbox ul li{
+  padding:0 60px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
+  position: relative;
+  margin: 0 20px;
+}
+.vue-tooltip .tabbox ul li:hover{
+  border-bottom: 4px solid;
+
+
+            border-image: -webkit-linear-gradient(270deg,rgba(153,82,180,1) 0%,rgba(54,111,251,1) 100%) 20 20;
+
+            border-image: -moz-linear-gradient(270deg,rgba(153,82,180,1) 0%,rgba(54,111,251,1) 100%) 20 20;
+
+            border-image: -o-linear-gradient(270deg,rgba(153,82,180,1) 0%,rgba(54,111,251,1) 100%) 20 20;
+
+            border-image: linear-gradient(270deg,rgba(153,82,180,1) 0%,rgba(54,111,251,1) 100%) 20 20;
+  
+
+}
+.vue-tooltip .tabbox ul li:hover .activeLine{
+  display: none;
+}
+.vue-tooltip .tabbox ul li .activeLine{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  background:linear-gradient(270deg,rgba(153,82,180,1) 0%,rgba(54,111,251,1) 100%);
+}
+.vue-tooltip .tabbox .tabcon{
+  height: 300px;
+  text-align: center;
+  padding-top: 70px;
+  font-size: 18px;
+}
+
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active for below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+
+
+
+.vue-tooltip   .left-enter{
+  opacity: 0;
+  transform: translateX(100%);
+}
+.vue-tooltip .left-leave-to{
+  opacity: 0;
+  transform: translateX(-100%);
+  position: absolute;
+}
+.vue-tooltip .left-enter-active,.left-leave-active{
+  transition: all .5s ease-in;
+}
+
+
+
+
+
+
+
+
+
+
+
+
