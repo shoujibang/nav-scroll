@@ -1,6 +1,8 @@
 body,html{
   scroll-behavior: smooth;
   font-size: 62.5%; 
+  margin:0;
+  padding: 0;
 }
 .ccy-neuhive{
   width:100%;
@@ -26,7 +28,7 @@ body,html{
   background:rgba(255,255,255,1);
   box-shadow:0px 2px 10px 0px rgba(0,0,0,0.1);
   display: flex;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .ccy-neuhive .navFix{
   position: fixed;
@@ -70,7 +72,9 @@ body,html{
   text-align: center;
   color: #fff;
   font-size: 6rem;
-  padding: 300px;
+  padding: 300px 0;
+  /* height: 500px;
+  line-height: 500px; */
 }
 .onec{
   background: rebeccapurple;

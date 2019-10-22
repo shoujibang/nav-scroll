@@ -11,12 +11,18 @@
 
 	<body>
 		<div id="app">
-			<nav-scroll></nav-scroll>
+			<nav-scroll :nav-title="titles" :nav-context="texts"></nav-scroll>
 		</div>
 	</body>
 	<script>
 	new Vue({
-		el:'#app'
+		el:'#app',
+		data(){
+			return{
+				titles:["一","二","三"],
+				texts:["一","二","三"]
+			}
+		}
 	})
 	</script>
 </html>
